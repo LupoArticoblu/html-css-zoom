@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug{
+  border: 1px solid red;
+  background-color: darkkhaki;
+}
+
+.header{
+  display: inline-block;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+}
+
+.header .btn{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  color: white;
+}
+
+.header .btn .btn-head{
+  display: inline-block;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.2);
+}
