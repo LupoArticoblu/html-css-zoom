@@ -35,8 +35,32 @@
 
 /* zona main */
 .main{
+  background-color: black;
   height: 80vh;
   overflow: auto;
+  padding: 40px;
+}
+
+.main .test{
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  float: left;
+  height: 100px;
+  width: calc(100% / 7 - 50px);
+  position: relative;
+  color: azure;
+}
+
+/* flex non ha funzionato, quindi ho tipiegato sull'attributo float per alliniare le card sulla stessa riga*/
+
+.main .name{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.4);
+  padding: 5px;
 }
 
 /* zona footer */
@@ -70,6 +94,8 @@
   font-size: large;
 }
 
+/* da rivedere il cprretto inserimento delle chevron e il testo sotto ogni icona*/
+
 /* regole condivise per l'allineamento delle icone*/
 div[class*="content"]{
   display: flex;
@@ -92,6 +118,9 @@ div[class*="content"]{
   font-size: 13px;
 }
 
+.header .btn .btn-head:hover{
+  cursor: default;
+}
 
 .footer-container .content1 i:active,
 .footer-container .content2 i:active{
