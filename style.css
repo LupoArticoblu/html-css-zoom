@@ -9,6 +9,8 @@
   background-color: darkkhaki;
 }
 
+
+/* zona header */
 .header{
   display: inline-block;
   height: 10vh;
@@ -29,4 +31,76 @@
   margin-right: 10px;
   border-radius: 10px;
   background-color: rgba(255,255,255,0.2);
+}
+
+/* zona main */
+.main{
+  height: 80vh;
+  overflow: auto;
+}
+
+/* zona footer */
+.footer{
+  height: 10vh;
+  background-color: rgba(0,0,0,0.8);
+  border-bottom: 1px solid white;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  color: white;
+}
+
+.footer-container .content1 i,
+.footer-container .content2 i{
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  font-size:200%;
+  margin-left: 5px;
+}
+
+.footer-container .content3{
+  height: 100%;
+  background-color: grey;
+  padding: 0 3%;
+  color: rgb(180, 4, 4);
+  font-size: large;
+}
+
+/* regole condivise per l'allineamento delle icone*/
+div[class*="content"]{
+  display: flex;
+  text-align: center;
+  line-height: 100px;
+}
+
+.video::after,
+.mute::after{
+  content:"\2304";
+}
+
+.chat::before{
+  content:"\2304";
+}
+
+/* regole active e hover*/
+
+.header .btn .btn-head:active{
+  font-size: 13px;
+}
+
+
+.footer-container .content1 i:active,
+.footer-container .content2 i:active{
+  color: green;
+}
+
+.footer-container .content3 .end:hover{
+  cursor: default;
+}
+.footer-container .content3 .end:active{
+  color: #000;
 }
